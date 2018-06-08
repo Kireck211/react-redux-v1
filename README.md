@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+## Welcome to React-Redux fundamentals course
 
-You can use the [editor on GitHub](https://github.com/Kireck211/react-redux-v1/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This course is intended to help you to understand React and all the things that came along with it.
+If you find any mistake, error or comentary please reach me at **erickdesantiago11@gmail.com**.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Setup
+In order to be able to complete this workshop, we need to download some tools:
 
-### Markdown
+* node.js 6+
+* Yarn
+* Code editor of your election
+* Google chrome browser
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### Yarn installs
+After installing Yarn we need to add some tools using yarn
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Kireck211/react-redux-v1/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+yarn global add jest@v19.0.2
+yarn global add nodemon
+yarn global add webpack@2.2.1
+yarn global add prettier@v0.22.0
+yarn global add eslint@v3.18.0
+```
