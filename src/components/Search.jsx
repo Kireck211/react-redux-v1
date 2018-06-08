@@ -5,30 +5,27 @@ import Col from './Col';
 import payloads from '../../data.json';
 
 class Search extends Component {
+  fillArray = (value: number, len: number) => {
+    const arr = [];
+    for (let i = 0; i < len; i += 1) {
+      arr.push(value);
+    }
+    return arr;
+  };
   render() {
     let rows;
     const cols = payloads.movies.length % 3;
     let type;
     if (cols === 0) {
       type = 3;
-      rows = Array(...{ length: payloads.movies.length / 3 }).map(
-        Number.call,
-        Number
-      );
+      rows = this.fillArray(3, payloads.movies.length / 3);
     } else if (cols === 1) {
       type = 2;
-      rows = Array(...{ length: payloads.movies.length / 2 }).map(
-        Number.call,
-        Number
-      );
+      rows = this.fillArray(3, payloads.movies.length / 2);
     } else {
       type = 1;
-      rows = Array(...{ length: payloads.movies.length }).map(
-        Number.call,
-        Number
-      );
+      rows = this.fillArray(3, payloads.movies.length);
     }
-    console.log(rows);
     return (
       <div>
         <header>
