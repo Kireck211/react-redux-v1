@@ -2,7 +2,7 @@ import React from 'react';
 
 const Details = () => (
   <div className="details">
-    <img src="/public/img/movie_image.jpg" alt="Movie image" />
+    <img src="/public/img/movie_image.jpg" alt="Movie" />
     <div>
       <h2>Title</h2>
       <h4>Rating: 8.1</h4>

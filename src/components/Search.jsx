@@ -8,7 +8,7 @@ class Search extends Component {
   fillArray = (value: number, len: number) => {
     const arr = [];
     for (let i = 0; i < len; i += 1) {
-      arr.push(value);
+      arr.push(value + i);
     }
     return arr;
   };
@@ -33,7 +33,7 @@ class Search extends Component {
           <input type="text" placeholder="Search Movie" />
         </header>
         {rows.map((row, index) => (
-          <div className="row wrapper">
+          <div className="row wrapper" key={row}>
             {payloads.movies
               .slice(index * type, index * type + type)
               .map(movie => (
@@ -43,6 +43,7 @@ class Search extends Component {
                   title={movie.title}
                   rating={movie.vote_average}
                   description={movie.overview}
+                  key={movie.imdb_id}
                 />
               ))}
           </div>

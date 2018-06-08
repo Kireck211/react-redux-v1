@@ -59,7 +59,15 @@ const Col = (props: {
   description: string
 }) => {
   if (props.type === 1) {
-    return <Col1 {...props} />;
+    return (
+      <Col1
+        type={props.type}
+        imageUrl={props.imageUrl}
+        title={props.title}
+        rating={props.rating}
+        description={props.description}
+      />
+    );
   } else if (props.type === 2) {
     return <Col2 {...props} />;
   }
