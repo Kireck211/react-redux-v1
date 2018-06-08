@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -13,7 +14,16 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/search" component={Search} />
-        <Route path="/details/:id" component={Details} />
+        <Route
+          path="/details/:id"
+          component={(props: {
+            match: {
+              params: {
+                id: string
+              }
+            }
+          }) => <Details id={props.match.params.id} />}
+        />
         <Route default component={FourOhFour} />
       </Switch>
     </div>
