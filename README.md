@@ -3,6 +3,8 @@
 This course is intended to help you to understand React and all the things that came along with it.
 If you find any mistake, error or comentary please reach me at **erickdesantiago11@gmail.com**.
 
+[Website](http://programacioncompetitivaiteso.me/react-redux-v1/)
+
 ### Setup
 In order to be able to complete this workshop, we need to download some tools:
 
@@ -77,7 +79,7 @@ module.exports = {
 
 We need to create a .babelrc file at your root directory to configure babel
 
-```JSON
+```json
 {
   "presets": [
     "react",
@@ -106,7 +108,7 @@ We need to create a .babelrc file at your root directory to configure babel
 
 Create index.html file at your root directory.
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -131,7 +133,7 @@ Eslint is a tool hepling the developer to use a standarized coding style and hel
 
 To make use of Eslint in your code Editor you should follow the instructions of your code editor and create a .eslintrc.json file in your root directory.
 
-```JSON
+```json
 {
   "extends": [
     "plugin:flowtype/recommended",
@@ -245,7 +247,7 @@ styled-components
 
 Create Home
 
-```JSX
+```jsx
 <div className='app'>
   <div className='home'>
     <h1>Tieso Movies</h1>
@@ -260,7 +262,7 @@ Create Home
 
 Create Search
 
-```JSX
+```jsx
 <div>
   <header>
     <h2>Home</h2>
@@ -307,7 +309,7 @@ Create Search
 #### v1-2
 
 Insert structure to Search
-```JSX
+```jsx
 <div className='app'>
   <header>
     <h2>Home</h2>
@@ -331,7 +333,7 @@ Insert col_3 to Search
 ```
 
 Insert col_2 to Search 
-```JSX
+```jsx
 <div className='col col_2'>
   <img src="" alt="Movie image"/>
   <div>
@@ -343,7 +345,7 @@ Insert col_2 to Search
 ```
 
 Insert col_1 to Search
-```JSX
+```jsx
 <div className='col col_1'>
   <img src="" alt="Movie image"/>
   <div>
@@ -358,7 +360,7 @@ Insert col_1 to Search
 
 Add Single Page behavior
 
-```javascript
+```jsx
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -387,7 +389,7 @@ render(React.createElement(App), document.getElementById('app'));
 Add Link component to both Search and Home
 
 Create Details
-```JSX
+```jsx
 <div className='details'>
   <img src='/public/img/movie_image.jpg' alt='Movie image' />
   <div>
