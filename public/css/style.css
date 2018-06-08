@@ -1,0 +1,160 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 20px;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+header h2 > a {
+  color: white;
+  text-decoration: none;
+}
+
+header h2 > a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+div.app {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url('/public/img/background_image_blurred.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+div.app > div.home {
+  min-width: 34%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #848484;
+  padding: 30px 70px;
+  opacity: .85;
+  border-radius: 15px;
+}
+
+div.app > div.home h1 {
+  margin-bottom: 20px;
+}
+
+div.app > div.home h1, div.app > div.home h5 {
+  color:white;
+}
+
+div.app > div.home a {
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+div.app > div.home a:hover {
+  background-color: black;
+  color: white;
+  padding: 12px;
+}
+
+div.app > div.home > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+div.app > div.home > div > h5 {
+  margin: 0px;
+}
+
+div.app > div > div.row {
+  max-width: 100%;
+}
+
+div.app div.row > div.col {
+  background-color: #fff;
+  opacity: 0.95;
+  margin: 1% 3%;
+  min-height: 30vh;
+  border-radius: 5px;
+}
+
+div.app div.row > div.col_3 > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+div.app div.row > div.col_3 > div > img {
+  max-height: 40vh;
+}
+
+div.app div.row > div.col_3 > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+  padding-left: 15px;
+}
+
+div.app div.row > div.col_2 {
+  display: flex;
+  padding: 15px;
+}
+
+div.app div.row > div.col_2 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 15px;
+}
+
+div.app div.row > div.col_2 > div > p {
+  margin-bottom: 0px;
+}
+
+div.app div.row > div.col_2 > img {
+  max-height: 50vh;
+}
+
+div.app div.row > div.col_1 {
+  max-height: 80vh;
+  padding-left: 0px;
+  display: flex;
+}
+
+div.app div.row > div.col_1 > img {
+  height: 100%;
+}
+
+div.app div.row > div.col_1 > div {
+  padding-left: 2%;
+  padding-top: 2%;
+}
+
+div.app div.row > div.col_1 > div > p {
+  font-size: 1.3em;
+}
+
+div.app > div.details {
+  display: flex;
+}
+
+div.app > div.details > img {
+  height: 100vh;
+}
+
+div.app >div.details > div {
+  background-color: white;
+  opacity: .85;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
